@@ -8,7 +8,6 @@
   <script src="https://kit.fontawesome.com/f4017e706c.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
   <link rel="stylesheet" href="./styles/main.css">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <title>Sophie Turnell - Developer</title>
 </head>
 <body>
@@ -16,17 +15,18 @@
     <nav>
       <ul>
         <div class="navbar-items">
-          <h2 class="logo">ST</h2>
+          <!-- <h2>ST</h2> -->
           
         </div>
 
         <div class="navbar-items">
           <div class="index">
             <!-- <li id="top">Top</li> -->
-            <li><a href="#intro_id">Introduction</a></li>
+            
             <li><a href="#skills_id">Skills</a></li>
             <li><a href="#projects_id">Projects</a></li>
             <li><a href="#course_id">Course</a></li>
+            <li><a href="#intro_id">About</a></li>
           </div>
         </div>
       </ul>
@@ -37,115 +37,20 @@
 
 <!-- IMAGE CAROUSEL -->
 <section class="section">
-  <!-- <div class="carousel"> -->
-<!-- ============================================= -->
-<div class="w3-container">
-  <h2>Slideshow Indicators</h2>
-  <p>An example of using buttons to indicate how many slides there are in the slideshow, and which slide the user is
-    currently viewing.</p>
-</div>
+  <div class="carousel">
 
-<div class="w3-content w3-display-container" style="max-width:800px">
-  <img class="mySlides w3-animate-fading" src="https://imgur.com/fs95T4l.jpg" style="width:100vw">
-  <img class="mySlides w3-animate-fading" src="https://imgur.com/yDP94ht.jpg" style="widows: 100vw">
-  <img class="mySlides w3-animate-fading" src="https://imgur.com/rygsmLr.jpg" style="width:100vw">
-  <img class="mySlides w3-animate-fading" src="https://imgur.com/48Y8NOS.jpg" style="width:100vw">
-  <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
-    <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
-    <div class="w3-right w3-hover-text-white" onclick="plusDivs(1)">&#10095;</div>
-    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
-    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
-    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
-    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(4)"></span>
+<ul class="slideshow">
+  <li> <span>Slide One</span> </li>
+  <li> <span>Slide Two</span> </li>
+  <li> <span>Slide Three</span> </li>
+  <li> <span>Slide Four</span> </li>
+</ul>
+
   </div>
-</div>
-
-<script>
-  let slideIndex = 1
-  showDivs(slideIndex)
-
-  function plusDivs(n) {
-    showDivs(slideIndex += n)
-  }
-
-  function currentDiv(n) {
-    showDivs(slideIndex = n)
-  }
-
-  function showDivs(n) {
-    let i
-    const x = document.getElementsByClassName('mySlides')
-    const dots = document.getElementsByClassName('demo')
-    if (n > x.length) {
-      slideIndex = 1
-    }
-
-    if (n < 1) {
-      slideIndex = x.length
-    }
-
-    for (i = 0; i < x.length; i++) {
-      x[i].style.display = 'none'
-    }
-
-    for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(' w3-white', '')
-    }
-
-    x[slideIndex - 1].style.display = 'block'
-    dots[slideIndex - 1].className += ' w3-white'
-  }
-</script>
-
-<script>
-  var myIndex = 0;
-  carousel();
-
-  function carousel() {
-    var i;
-    var x = document.getElementsByClassName("mySlides");
-    for (i = 0; i < x.length; i++) {
-      x[i].style.display = "none";
-    }
-    myIndex++;
-    if (myIndex > x.length) { myIndex = 1 }
-    x[myIndex - 1].style.display = "block";
-    setTimeout(carousel, 9000);
-  }
-</script>
-
-
-<!-- ============================================= -->
-  <!-- </div> -->
 
 </section>
 
-<!-- INTRO -->
-<section class="section">
-  <div class="intro">
-    <h2 id="intro_id">INTRODUCTION</h2>
 
-    <div class="intro-container">
-      <div class="column1">
-        <h1>Sophie Turnell - Junior Developer</h1>
-        <p>Junior software engineer with a professional background in hedge fund investor relations and a degree in product design.<br>
-        Enjoys creatively solving problems and implementing innovative, sustainable solutions in a collaborative environment.</p>
-        <a href="mailto:turnellsophie1@gmail.com"><i class="fas fa-envelope-square"></i></a>
-        <a href="www.github.com/sophieturnell" target="_blank"><i class="fab fa-github-square"></i></a>
-        <a href="www.linkedin.com/in/sophieturnell" target="_blank"><i class="fab fa-linkedin"></i></a>
-        <p>CV available on request</p>
-      </div>
-
-      <div class="column1">
-        <!-- Image -->
-        <img src="https://i.imgur.com/JPFt6Ip.jpg?3"></img>
-      </div>
-    </div>
-
-
-
-  </div>
-</section>
 
 
 <!-- SKILLS -->
@@ -153,7 +58,7 @@
   <div class="skills">
     <h2 id="skills_id">SKILLS</h2>
     <div class="skills-container">
-      <div class="column">
+      <div class="column2">
         <p><b>Languages:</b> JavaScript | Python | HTML5  | CSS3 | SASS | Node.js<br>
           <b>Frameworks:</b> Django & Django Rest Framework | Express.js | Mocha | React.js<br>
           <b>Libraries:</b> React Router | Webpack | Babel | Fetch | Axios | jQuery | Chai | Supertest | Bulma |
@@ -171,7 +76,7 @@
           Transitions<br>
           <b>Graphics:</b> Adobe Photoshop | Adobe Illustrator</p>
       </div>
-      <div class="column">
+      <div class="column2">
         <!-- Languages -->
         <i class="devicon-javascript-plain"></i>
         <i class="devicon-python-plain"></i>
@@ -387,13 +292,13 @@
     <div class="course-container">
       <h3>Software Engineering Immersive, General Assembly, London</h3>
       <div class="column-container">
-      <div class="column">
+      <div class="column2">
       <p>A full-time career accelerator designed to transform individuals into full-stack software engineers.
         Consisting of four modules: Programming Fundamentals and Computer Science; React; Node & Express; and Python & Django;
         the course is taught through expert-led lectures, discussions, interactive labs and homework assignments on a variety of languages,
         frameworks and libraries.</p>
         </div>
-      <div class="column">
+      <div class="column2">
       <p>Progress was showcased through daily stand-ups, comprehensive portfolio projects and presentations with an emphasis on
         honing communication and collaboration skills, coding both in pairs and groups.
         Whilst the majority of material covered used the JavaScript and Python ecosystems, the curriculum was versatile
@@ -410,6 +315,33 @@
 </section>
 
 
+<!-- INTRO/ABOUT -->
+<section class="section">
+  <div class="intro">
+    <h2 id="intro_id">ABOUT</h2>
+
+    <div class="intro-container">
+      <div class="column1">
+        <h2>Sophie Turnell - Junior Developer</h2>
+        <div class="column">
+          <p>Junior software engineer with a professional background in hedge fund investor relations and a degree in
+            product design.<br><br>
+            Enjoys creatively solving problems and implementing innovative, sustainable solutions in a collaborative
+            environment.</p>
+        </div>
+      </div>
+
+      <div class="column1">
+        <!-- Image -->
+        <img src="https://i.imgur.com/JPFt6Ip.jpg?3"></img>
+      </div>
+    </div>
+
+
+
+  </div>
+</section>
+
 
 
 <!-- course modules -->
@@ -419,7 +351,13 @@
 </main>
 
 <footer>
-  <!-- contact links? -->
+  <!-- CONTACT -->
+  <div class="contact">
+    <a href="mailto:turnellsophie1@gmail.com"><i class="fas fa-envelope-square"></i></a>
+    <a href="www.github.com/sophieturnell" target="_blank"><i class="fab fa-github-square"></i></a>
+    <a href="www.linkedin.com/in/sophieturnell" target="_blank"><i class="fab fa-linkedin"></i></a>
+    <p>CV available on request</p>
+  </div>
 </footer>
 
 </body>
