@@ -3,10 +3,12 @@ box-sizing: border-box;
 }
 
 header {
-  background-color: rgb(37,38,37);
+  background-color: rgba(37,38,37, 0.9);
   height: 10vh;
   padding: 1vw 10vw;
   margin: 0;
+  position: fixed;
+  width: 100vw;
 }
 
 li {
@@ -30,11 +32,11 @@ ul {
 }
 
 a:link {
-  /* text-transform: uppercase; */
+  text-transform: uppercase;
   font-weight: 300;
+  letter-spacing: 3px;
+  font-size: 12px;
   text-decoration-line: none;
-  /* letter-spacing: 1px; */
-  font-size: 14px;
   color: rgb(231, 229, 229);
   /* font-family: FGrotesk,Helvetica Neue,arial,sans-serif; */
   line-height: 1.6;
@@ -74,6 +76,7 @@ body {
   font-size: 30px;
 }
 
+/* Soph name */
 h1 {
   text-transform: uppercase;
   font-weight: 200;
@@ -81,6 +84,7 @@ h1 {
   font-size: 30px;
 }
 
+/* Section titles */
 h2 {
   text-transform: uppercase;
   font-weight: 200;
@@ -89,21 +93,28 @@ h2 {
 }
 
 #intro_id {
-  background-color: lightsalmon;
+  /* background-color: lightsalmon; */
 }
 
+/* project titles and nav bar */
 h3 {
   text-transform: uppercase;
   font-weight: 300;
   letter-spacing: 3px;
-  font-size: 14px;
+  font-size: 12px;
 }
 
+/* briefs */
 h4 {
   text-transform: uppercase;
   font-weight: 300;
   letter-spacing: 3px;
   font-size: 14px;
+}
+
+p {
+  font-size: 17px;
+  letter-spacing: 1px;
 }
 
 .section {
@@ -114,9 +125,34 @@ h4 {
 
 /* ======================================================= */
 
+.carousel {
+  /* background-color: magenta; */
+  height: 100vh;
+}
+
+.mySlides {
+  /* display:none; */
+  margin: 0;
+
+}
+
+.w3-left, .w3-right, .w3-badge {
+  cursor:pointer
+}
+
+.w3-badge {
+  height:13px;
+  width:13px;
+  padding:0
+}
+
+
+
+/* ======================================================= */
+
 .intro {
   background-color: rgba(37, 38, 37, 0.75);
-  height: 90vh;
+  height: 100vh;
   padding: 1vw 10vw;
   display: flex;
   flex-direction: column;
@@ -125,9 +161,8 @@ h4 {
 }
 
 .intro-container {
-  background-color: navy;
+  /* background-color: navy; */
   display: flex;
-  
 }
 
 .column1 {
