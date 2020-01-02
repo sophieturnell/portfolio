@@ -100,7 +100,7 @@ h2 {
   /* background-color: maroon; */
 }
 
-/* project titles and nav bar */
+/* project titles, briefs and nav bar */
 h3 {
   text-transform: uppercase;
   font-weight: 300;
@@ -108,7 +108,7 @@ h3 {
   font-size: 12px;
 }
 
-/* briefs */
+
 h4 {
   text-transform: uppercase;
   font-weight: 300;
@@ -130,9 +130,7 @@ p {
 .carousel {
   background-color: rgba(37,38,37, 0.9);
   height: 100vh;
-  
 }
-
 
 /* ======================================================= */
 /* SLIDESHOW */
@@ -348,29 +346,101 @@ i {
 }
 
 .project_container {
-  /* background-color: navy; */
+  background-color: pink;
   padding: 5vw 0;
   display: flex;
   flex-wrap: wrap;
   /* justify-content: space-between; */
 }
 
-.project {
-  background-color: rgb(45, 45, 45);
+.project { 
+  /* background-color: rgb(45, 45, 45); */
   width: 70vw;
-  max-width: 400px;
+  max-width: 600px;
   margin: 0 2vw 2vw 0;
   display: flex;
   flex-direction: column;
 }
 
-.row {
-  /* background-color: gray; */
-  margin: 0 0 1vw 0;
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  /* background-color: transparent; */
+  background-color: fuchsia;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  width: 100%;
+  max-width: 600px;
+  margin: 0 2vw 2vw 0;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
 }
 
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: rgb(45, 45, 45);
+  min-height: 500px;
+}
+
+/* Style the back side */
+.flip-card-back {
+  transform: rotateY(180deg);
+  background-color: rgb(45, 45, 45);
+  min-height: 500px;
+}
+
+.row {
+  /* background-color: yellow; */
+  padding: 0 0 1vw 0;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(45, 45, 45);
+}
+
+.screenshot {
+  max-width: 600px;
+}
+
+.title {
+  /* background-color: darkorchid; */
+}
+
+.brief {
+  /* background-color: darkturquoise; */
+}
+
+.logo {
+  /* background-color: dodgerblue; */
+  width: 20vw;
+}
+
+.description {
+  background-color: rgb(45, 45, 45);
+  text-align: right;
+  /* width: 100%; */
+}
 /* ======================================================= */
 
 .course {
@@ -391,32 +461,7 @@ i {
   display: flex;
 }
 
-/* ======================================================= */
 
-.screenshot {
-  max-width: 400px;
-  /* min-height: 50vh; */
-}
-
-.title {
-  /* background-color: darkorchid; */
-}
-
-.brief {
-  /* background-color: darkturquoise; */
-}
-
-.logo {
-  /* background-color: dodgerblue; */
-  width: 20vw;
-}
-
-.description {
-  /* background-color: gold; */
-  width: 50vw;
-  text-align: right;
-  /* display: flex; */
-}
 /* ======================================================= */
 
 .intro {
