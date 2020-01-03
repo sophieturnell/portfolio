@@ -108,12 +108,13 @@ h3 {
   font-size: 12px;
 }
 
-
+/* technologies */
 h4 {
-  text-transform: uppercase;
+  font-size: 17px;
   font-weight: 300;
-  letter-spacing: 3px;
-  font-size: 14px;
+  letter-spacing: 1px;
+  text-transform: none;
+  margin: 0;
 }
 
 p {
@@ -330,6 +331,22 @@ titleAnimation { 0% {
   /* flex-wrap: wrap; */
 }
 
+.tech-row {
+  background-color: royalblue;
+  display: flex;
+}
+
+.icon {
+  background-color: sandybrown;
+  margin: 5px;
+  text-align: center;
+}
+
+.iconify {
+  /* color: white; */
+  /* background-color: white; */
+}
+
 i {
   width: 100px;
   font-size: 2rem;
@@ -504,6 +521,10 @@ i {
   /* background-color: navy; */
   margin: 0 2vw 2vw 0;
   width: 37vw;
+}
+
+.tech-categories {
+  text-align: right;
 }
 /* ========================================================== */
 
