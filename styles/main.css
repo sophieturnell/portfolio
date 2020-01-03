@@ -347,13 +347,20 @@ i {
 }
 
 .project_container {
-  background-color: pink;
+  /* background-color: pink; */
   padding: 5vw 0;
   display: flex;
   flex-wrap: wrap;
-  min-height: 2100px;
-  height: auto;
+  min-height: 2400px;
   /* justify-content: space-between; */
+}
+
+@media only screen and (min-width: 1579px) {
+  .project_container {
+    /* background-color: lightblue; */
+    min-height: 1300px;
+
+  }
 }
 
 .project { 
