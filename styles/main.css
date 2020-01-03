@@ -351,7 +351,8 @@ i {
   padding: 5vw 0;
   display: flex;
   flex-wrap: wrap;
-  min-height: 2000px;
+  min-height: 2100px;
+  height: auto;
   /* justify-content: space-between; */
 }
 
@@ -435,7 +436,7 @@ i {
 }
 
 .logo {
-  background-color: dodgerblue;
+  /* background-color: dodgerblue; */
   width: 600px;
   text-align: right;
 }
