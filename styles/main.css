@@ -119,8 +119,10 @@ h4 {
 
 p {
   font-size: 17px;
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
   text-transform: none;
+  margin: 0;
+  font-weight: 350;
 }
 
 .section {
@@ -324,14 +326,14 @@ titleAnimation { 0% {
 }
 
 .skills-container {
-  background-color: navy;
+  /* background-color: navy; */
   padding: 5vw 0;
   display: flex;
   /* flex-direction: column; */
   /* flex-wrap: wrap; */
 }
 
-.tech-row {
+/* .tech-row {
   background-color: royalblue;
   display: flex;
 }
@@ -340,16 +342,11 @@ titleAnimation { 0% {
   background-color: sandybrown;
   margin: 5px;
   text-align: center;
-}
-
-.iconify {
-  /* color: white; */
-  /* background-color: white; */
-}
+} */
 
 i {
   width: 100px;
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 /* ======================================================= */
@@ -471,7 +468,7 @@ i {
 /* ======================================================= */
 
 .course {
-  background-color: rgba(37,38,37, 0.5);
+  background-color: rgba(37,38,37, 0.65);
   min-height: 120vh;
   padding: 1vw 10vw;
   display: flex;
@@ -480,7 +477,7 @@ i {
 }
 
 .course-container {
-  background-color: navy;
+  /* background-color: navy; */
   padding: 5vw 0;
 }
 
@@ -504,21 +501,29 @@ i {
 .intro-container {
   background-color: navy;
   display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 5px;
 }
 
 .column {
-  /* background-color: dodgerblue; */
-  margin: 0 2vw 2vw 0;
+  background-color: dodgerblue;
+  margin: 0 2vw 0 0;
   width: 30vw;
+  
+  /* display: flex; */
 }
 
 .column1 {
-  /* background-color: hotpink; */
+  background-color: hotpink;
   margin: 0 2vw 2vw 0;
+  display: flex;
+  flex-direction: column;
+  
 }
 
 .column2 {
-  /* background-color: navy; */
+  background-color: red;
   margin: 0 2vw 2vw 0;
   width: 37vw;
 }
