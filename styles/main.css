@@ -23,6 +23,7 @@ ul {
   display: flex;
   justify-content: space-between;
   /* background-color: maroon; */
+  padding: 0;
 }
 
 .navbar-items {
@@ -152,7 +153,7 @@ p {
   width: 100%;
   height: 100%;
   position: absolute;
-  top: 0px;
+  top: 102vh;
   left: 0px;
   color: transparent;
   background-size: cover;
@@ -318,7 +319,7 @@ titleAnimation { 0% {
 
 .skills {
   background-color: rgba(37, 38, 37, 0.75);
-  height: 120vh;
+  height: 90vh;
   padding: 1vw 10vw;
   display: flex;
   flex-direction: column;
@@ -346,7 +347,7 @@ titleAnimation { 0% {
 
 i {
   width: 100px;
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 
 /* ======================================================= */
@@ -469,7 +470,7 @@ i {
 
 .course {
   background-color: rgba(37,38,37, 0.65);
-  min-height: 120vh;
+  min-height: 90vh;
   padding: 1vw 10vw;
   display: flex;
   flex-direction: column;
@@ -490,7 +491,7 @@ i {
 
 .intro {
   background-color: rgba(37, 38, 37, 0.75);
-  height: 100vh;
+  height: 101vh;
   padding: 1vw 10vw;
   display: flex;
   flex-direction: column;
@@ -499,14 +500,14 @@ i {
 }
 
 .intro-container {
-  background-color: navy;
+  /* background-color: navy; */
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: center;
 }
 
 .column {
-  background-color: dodgerblue;
+  /* background-color: dodgerblue; */
   margin: 0 2vw 0 0;
   width: 30vw;
   
@@ -514,7 +515,7 @@ i {
 }
 
 .column1 {
-  background-color: hotpink;
+  /* background-color: hotpink; */
   margin: 0 2vw 2vw 0;
   display: flex;
   flex-direction: column;
@@ -522,7 +523,7 @@ i {
 }
 
 .column2 {
-  background-color: red;
+  /* background-color: red; */
   margin: 0 2vw 2vw 0;
   width: 37vw;
 }
