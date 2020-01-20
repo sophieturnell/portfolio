@@ -15,20 +15,31 @@ header {
   z-index: 1;
 }
 
-li {
-  list-style: none;
+/* ipad portait 768px */
+@media only screen and (max-width: 750px) {
+  header {
+  height: 12vh;
+  padding: 0;
+  }
 }
 
+li {
+  list-style: none;
+  padding: 4px;
+}
+@media only screen and (min-width: 750px) {
 ul {
   display: flex;
   justify-content: space-between;
   /* background-color: maroon; */
   padding: 0;
 }
+}
 
-.navbar-items {
+  .navbar-items {
   /* background-color: darkviolet; */
   display: flex;
+    /* min-height: 1300px; */
 }
 
 .index {
@@ -77,13 +88,6 @@ body {
   letter-spacing: 0;
 }
 
-/* .logo {
-  text-transform: uppercase;
-  font-weight: 200;
-  letter-spacing: 3px;
-  font-size: 30px;
-} */
-
 /* Soph name and pic names */
 h1 {
   text-transform: uppercase;
@@ -109,12 +113,20 @@ h3 {
   font-size: 12px;
 }
 
-/* technologies */
+/* technologies titles */
 h4 {
-  font-size: 17px;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 3px;
+  font-size: 12px;
+}
+/* tech names */
+h5 {
+  text-transform: uppercase;
+  font-size: 12px;
   font-weight: 300;
   letter-spacing: 1px;
-  text-transform: none;
+  /* text-transform: none; */
   margin: 0;
 }
 
@@ -130,6 +142,94 @@ p {
   min-height: 50vh;
 }
 
+
+/* ======================================================= */
+
+.intro {
+  background-color: rgba(37, 38, 37, 0.75);
+  height: 101vh;
+  padding: 1vw 10vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 800px) {
+  .intro {
+    /* background-color: aquamarine; */
+    height: 150vh;
+  }
+  .intro-container {
+    flex-direction: column;
+  }
+  .column1{
+    width: 427px;
+  }
+  div.column{
+    width: 427px;
+    margin: 0;
+  }
+}
+
+/* iphone width 375px */
+@media only screen and (max-width: 550px) {
+  .intro {
+    /* background-color: pink; */
+    height: 1100px;
+  }
+  .intro-container {
+    flex-direction: column;
+  }
+  .column1{
+    width: 270px;
+  }
+  div.column{
+    width: 270px;
+    margin: 0;
+  }
+  img{
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.intro-container {
+  /* background-color: navy; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.column {
+  /* background-color: dodgerblue; */
+  margin: 0 2vw 0 0;
+  width: 30vw;
+}
+
+.column1 {
+  /* background-color: hotpink; */
+  margin: 0 2vw 2vw 0;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.column2 {
+  /* background-color: red; */
+  margin: 0 2vw 2vw 0;
+  width: 37vw;
+}
+
+.column3 {
+  /* background-color: yellow; */
+  margin: 0 2vw 2vw 0;
+  width: 37vw;
+}
+
+.tech-categories {
+  text-align: right;
+}
+
 /* ======================================================= */
 
 .carousel {
@@ -137,10 +237,8 @@ p {
   height: 100vh;
 }
 
-/* ======================================================= */
 /* SLIDESHOW */
 /* html { min-height: 100%; } */
-
 /* body { height: 100%; } */
 
 .slideshow {
@@ -168,6 +266,12 @@ p {
   animation: imageAnimation 24s linear infinite 0s;
 }
 
+/* only show on full screen */
+@media only screen and (max-width: 1600px) {
+  section#hide-mobile{
+    display: none;
+  }
+}
 .no-cssanimations .slideshow li span { opacity: 1; }
 
 /* background images */
@@ -318,8 +422,8 @@ titleAnimation { 0% {
 /* ======================================================= */
 
 .skills {
-  background-color: rgba(37, 38, 37, 0.75);
-  height: 90vh;
+  background-color: rgba(37, 38, 37, 0.85);
+  min-height: 1800px;
   padding: 1vw 10vw;
   display: flex;
   flex-direction: column;
@@ -330,24 +434,100 @@ titleAnimation { 0% {
   /* background-color: navy; */
   padding: 5vw 0;
   display: flex;
-  /* flex-direction: column; */
+  align-items: center;
+  flex-direction: column;
   /* flex-wrap: wrap; */
 }
 
-/* .tech-row {
-  background-color: royalblue;
+.tech-list-row{
+  /* background-color: lightsalmon; */
+  width: 100%;
+  /* max-width: 100%; */
+  min-width: 100%;
   display: flex;
+  flex-direction: column;
+  padding: 2vh 0;
 }
-
-.icon {
-  background-color: sandybrown;
-  margin: 5px;
-  text-align: center;
-} */
 
 i {
   width: 100px;
   font-size: 2.5rem;
+}
+@media only screen and (max-width: 2000px) {
+  .skills{
+    /* background-color: dodgerblue; */
+    height: 2000px;
+  }
+
+  .tech-list-row {
+  /* background-color: pink; */
+  /* display: flex; */
+  width: 650px;
+  /* flex-wrap: wrap; */
+}
+  .tech-row {
+    width: 650px;
+    /* max-width: 650px; */
+    min-width: 650px;
+  }
+
+  .column3{
+    display: none;
+  }
+}
+
+/* @media only screen and (min-width: 800px) {
+  .skills {
+    background-color: aquamarine;
+  }
+} */
+
+@media only screen and (max-width: 750px) {
+  .skills{
+    /* background-color: cadetblue; */
+    height: 1400px;
+  }
+
+  .skills-container{
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .column3{
+    display: none;
+  }
+
+  .tech-row {
+    width: 270px;
+    /* max-width: 650px; */
+    min-width: 270px;
+  }
+
+  .tech-list-row {
+    width: 270px;
+    /* max-width: 650px; */
+    min-width: 270px;
+  }
+
+  .hide-for-mobile{
+    display: none;
+  }
+}
+
+  .tech-row {
+  /* background-color: royalblue; */
+  display: flex;
+  width: 270px;
+  flex-wrap: wrap;
+}
+
+.icon {
+  background-color: rgba(37, 38, 37, 0.20);
+  padding: 10px;
+  margin: 5px;
+  text-align: center;
+  width: 95px;
+  height: 90px;
 }
 
 /* ======================================================= */
@@ -359,23 +539,17 @@ i {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  /* align-items: center; */
 }
 
 .project_container {
-  /* background-color: pink; */
+  /* background-color: navy; */
   padding: 5vw 0;
   display: flex;
   flex-wrap: wrap;
   min-height: 2400px;
+  align-items: center;
   /* justify-content: space-between; */
-}
-
-@media only screen and (min-width: 1579px) {
-  .project_container {
-    /* background-color: lightblue; */
-    min-height: 1300px;
-
-  }
 }
 
 .project { 
@@ -390,7 +564,7 @@ i {
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-card {
   /* background-color: transparent; */
-  background-color: fuchsia;
+  /* background-color: fuchsia; */
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
   width: 100%;
   max-width: 600px;
@@ -429,6 +603,69 @@ i {
   min-height: 520px;
 }
 
+@media only screen and (max-width: 2000px) {
+  .projects {
+    /* background-color: plum; */
+    height: 2600px;
+  }
+
+  div.project_container {
+  padding: 0;
+  min-height: 2200px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+  div.project { 
+    /* background-color: yellow; */
+    width: 605px;
+    max-width: 605px;
+    height: 550px;
+    margin: 0;
+    display: flex;
+  }
+
+  img{
+    height: 100%;
+    width: 100%;
+  }
+
+  .project-mobile{
+    display:none;
+  }
+}
+
+/* iphone width 375px */
+@media only screen and (max-width: 550px) {
+  .projects {
+    /* background-color: lightblue; */
+    height: 3500px;
+    display: flex;
+  }
+
+  .flip-card-front {
+    /* background-color: lightcoral; */
+    min-height: 175px;
+    height: 175px;
+  }
+
+  div.project {
+    display: none;
+  }
+
+  div.project-mobile{
+    /* background-color: lightgoldenrodyellow; */
+    width: 100%;
+    max-width: 100%;
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+  }
+
+}
+
 /* Style the back side */
 .flip-card-back {
   transform: rotateY(180deg);
@@ -449,14 +686,6 @@ i {
   max-width: 600px;
 }
 
-.title {
-  /* background-color: darkorchid; */
-}
-
-.brief {
-  /* background-color: darkturquoise; */
-}
-
 .logo {
   /* background-color: dodgerblue; */
   width: 600px;
@@ -469,7 +698,7 @@ i {
 /* ======================================================= */
 
 .course {
-  background-color: rgba(37,38,37, 0.65);
+  background-color: rgba(37, 38, 37, 0.75);
   min-height: 90vh;
   padding: 1vw 10vw;
   display: flex;
@@ -480,57 +709,34 @@ i {
 .course-container {
   /* background-color: navy; */
   padding: 5vw 0;
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  flex-direction: column;
 }
 
 .column-container {
   display: flex;
-}
-
-
-/* ======================================================= */
-
-.intro {
-  background-color: rgba(37, 38, 37, 0.75);
-  height: 101vh;
-  padding: 1vw 10vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   
+
 }
 
-.intro-container {
-  /* background-color: navy; */
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+/* iphone width 375px */
+@media only screen and (max-width: 750px) {
+  .course {
+    /* background-color: pink; */
+    /* height: 1100px; */
+  }
+  .column-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .column2{
+    /* background-color: black; */
+    width: 270px;
+  }
 }
 
-.column {
-  /* background-color: dodgerblue; */
-  margin: 0 2vw 0 0;
-  width: 30vw;
-  
-  /* display: flex; */
-}
-
-.column1 {
-  /* background-color: hotpink; */
-  margin: 0 2vw 2vw 0;
-  display: flex;
-  flex-direction: column;
-  
-}
-
-.column2 {
-  /* background-color: red; */
-  margin: 0 2vw 2vw 0;
-  width: 37vw;
-}
-
-.tech-categories {
-  text-align: right;
-}
 /* ========================================================== */
 
 footer {
@@ -538,8 +744,12 @@ footer {
   padding: 4vw 25vw 4vw 42vw;
 }
 
-.contact {
-  /* background-color: rgba(1,5,20, 0.5); */
+@media only screen and (max-width: 960px) {
+  footer {
+    padding-inline-start: 40px;
+  }
 
+  div.contact {
+    display: flex;
+  }
 }
-
