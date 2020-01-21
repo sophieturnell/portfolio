@@ -543,7 +543,7 @@ i {
 }
 
 .project_container {
-  background-color: navy;
+  /* background-color: navy; */
   padding: 5vw 0;
   display: flex;
   flex-wrap: wrap;
@@ -605,12 +605,12 @@ i {
 
 @media only screen and (max-width: 2000px) {
   .projects {
-    background-color: plum;
+    /* background-color: plum; */
     height: 2000px;
   }
 
   div.project_container {
-    background-color: teal;
+    /* background-color: teal; */
   padding: 0;
   min-height: 1500px;
   display: flex;
@@ -640,7 +640,7 @@ i {
 /* iphone width 375px */
 @media only screen and (max-width: 750px) {
   .projects {
-    background-color: lightblue;
+    /* background-color: lightblue; */
     height: 2700px;
     display: flex;
   }
