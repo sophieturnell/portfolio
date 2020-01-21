@@ -543,11 +543,11 @@ i {
 }
 
 .project_container {
-  /* background-color: navy; */
+  background-color: navy;
   padding: 5vw 0;
   display: flex;
   flex-wrap: wrap;
-  min-height: 2400px;
+  min-height: 2000px;
   align-items: center;
   /* justify-content: space-between; */
 }
@@ -605,13 +605,14 @@ i {
 
 @media only screen and (max-width: 2000px) {
   .projects {
-    /* background-color: plum; */
-    height: 2600px;
+    background-color: plum;
+    height: 2000px;
   }
 
   div.project_container {
+    background-color: teal;
   padding: 0;
-  min-height: 2200px;
+  min-height: 1500px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -637,10 +638,10 @@ i {
 }
 
 /* iphone width 375px */
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 750px) {
   .projects {
-    /* background-color: lightblue; */
-    height: 3500px;
+    background-color: lightblue;
+    height: 2700px;
     display: flex;
   }
 
