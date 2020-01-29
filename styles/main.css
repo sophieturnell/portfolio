@@ -642,7 +642,6 @@ i {
   }
 }
 
-/* iphone width 375px */
 @media only screen and (max-width: 750px) {
   .projects {
     /* background-color: lightblue; */
