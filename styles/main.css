@@ -645,7 +645,7 @@ i {
 @media only screen and (max-width: 750px) {
   .projects {
     /* background-color: lightblue; */
-    height: 2700px;
+    min-height: 2700px;
     display: flex;
   }
 
@@ -671,6 +671,13 @@ i {
 
 }
 
+@media only screen and (max-width: 390px) {
+  .projects {
+    /* background-color: yellow; */
+    min-height: 3100px;
+  }
+
+}
 /* Style the back side */
 .flip-card-back {
   transform: rotateY(180deg);
