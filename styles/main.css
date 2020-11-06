@@ -23,7 +23,7 @@ header {
 /* ipad portait 768px */
 @media only screen and (max-width: 750px) {
   header {
-  height: 12vh;
+  height: 120px;
   padding: 0;
   }
 }
