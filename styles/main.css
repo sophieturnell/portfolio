@@ -9,12 +9,11 @@ html, body {
 
 header {
   background-color: rgba(37,38,37, 0.75);
-  height: 10vh;
-  padding: 1vw 10vw;
+  height: 120px;
+  padding: 0 10vw;
   margin: 0;
   position: fixed;
   width: 100vw;
-  /* position: absolute; */
   left: 0px;
   top: 0px;
   z-index: 1;
@@ -22,38 +21,38 @@ header {
 
 /* ipad portait 768px */
 @media only screen and (max-width: 750px) {
-  header {
-  height: 120px;
+  ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 0;
-  }
 }
+}
+
+
 
 li {
   list-style: none;
-  padding: 4px;
+  padding: 15px;
 }
+
 @media only screen and (min-width: 750px) {
 ul {
   display: flex;
   justify-content: space-between;
   /* background-color: maroon; */
-  padding: 0;
+  padding: 25px 0;
 }
 }
 
 .navbar-items {
   /* background-color: darkviolet; */
   display: flex;
-    /* min-height: 1300px; */
 }
 
 .navbar-items i{
   /* background-color: lightblue; */
   padding: 0 27px;
-}
-
-.navbar-items i:first-child{
-  padding: 0 27px 0 0;
 }
 
 .index {
@@ -806,15 +805,3 @@ footer {
   /* background-color: lightblue; */
   padding: 0 27px;
 }
-
-/* @media only screen and (max-width: 960px) {
-  footer {
-    padding-inline-start: 40px;
-  }
-
-  div.contact {
-    display: flex;
-    justify-content: center;
-  }
-} */
-
