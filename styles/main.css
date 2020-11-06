@@ -29,8 +29,6 @@ header {
 }
 }
 
-
-
 li {
   list-style: none;
   padding: 15px;
@@ -196,11 +194,7 @@ p {
 
 @media only screen and (max-width: 750px) {
   .index {
-  /* display: flex; */
-  /* width: 30vw; */
   width: 70vw;
-  /* height: 5vh; */
-  /* justify-content: space-evenly; */
   margin: 18px 0;
   /* background-color: magenta; */
   }
@@ -246,7 +240,6 @@ p {
   margin: 0 2vw 2vw 0;
   display: flex;
   flex-direction: column;
-  
 }
 
 .column2 {
@@ -256,7 +249,7 @@ p {
 }
 
 .column3 {
-  /* background-color: yellow; */
+  background-color: yellow;
   margin: 0 2vw 2vw 0;
   width: 37vw;
 }
@@ -267,198 +260,8 @@ p {
 
 /* ======================================================= */
 
-.carousel {
-  background-color: rgba(37,38,37, 0.9);
-  height: 100vh;
-}
-
-/* SLIDESHOW */
-/* html { min-height: 100%; } */
-/* body { height: 100%; } */
-
-.slideshow {
-  list-style: none;
-  z-index: 1;
-  
-}
-
-.slideshow li span {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 102vh;
-  left: 0px;
-  color: transparent;
-  background-size: cover;
-  background-position: 50% 50%;
-  background-repeat: none;
-  opacity: 0;
-  z-index: 0;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -webkit-animation: imageAnimation 24s linear infinite 0s;
-  -moz-animation: imageAnimation 24s linear infinite 0s;
-  animation: imageAnimation 24s linear infinite 0s;
-}
-
-/* only show on full screen */
-@media only screen and (max-width: 1600px) {
-  section#hide-mobile{
-    display: none;
-  }
-}
-.no-cssanimations .slideshow li span { opacity: 1; }
-
-/* background images */
-.slideshow li:nth-child(1) span { 
-  background-image: url(https://imgur.com/fs95T4l.jpg); }
-
-.slideshow li:nth-child(2) span {
-  background-image: url(https://imgur.com/yDP94ht.jpg);
-  -webkit-animation-delay: 6s;
-  -moz-animation-delay: 6s;
-  animation-delay: 6s;
-}
-
-.slideshow li:nth-child(3) span {
-  background-image: url(https://imgur.com/rygsmLr.jpg);
-  -webkit-animation-delay: 12s;
-  -moz-animation-delay: 12s;
-  animation-delay: 12s;
-}
-
-.slideshow li:nth-child(4) span {
-  background-image: url(https://imgur.com/48Y8NOS.jpg);
-  -webkit-animation-delay: 18s;
-  -moz-animation-delay: 18s;
-  animation-delay: 18s;
-}
-
-/* crossfade animations by changing the opacity level using @keyframes */
-@-webkit-keyframes 
-imageAnimation { 0% {
- opacity: 0;
- -webkit-animation-timing-function: ease-in;
-}
- 12.5% {
- opacity: 1;
- -webkit-animation-timing-function: ease-out;
-}
- 25% {
- opacity: 1;
-}
- 37.5% {
- opacity: 0;
-}
- 100% {
- opacity: 0;
-}
-}
-
-@-moz-keyframes 
-imageAnimation { 0% {
- opacity: 0;
- -moz-animation-timing-function: ease-in;
-}
- 12.5% {
- opacity: 1;
- -moz-animation-timing-function: ease-out;
-}
- 25% {
- opacity: 1;
-}
- 37.5% {
- opacity: 0;
-}
- 100% {
- opacity: 0;
-}
-}
-
-@keyframes 
-imageAnimation { 0% {
- opacity: 0;
- -webkit-animation-timing-function: ease-in;
- -moz-animation-timing-function: ease-in;
- animation-timing-function: ease-in;
-}
- 12.5% {
- opacity: 1;
- -webkit-animation-timing-function: ease-out;
- -moz-animation-timing-function: ease-out;
- animation-timing-function: ease-out;
-}
- 25% {
- opacity: 1;
-}
- 37.5% {
- opacity: 0;
-}
- 100% {
- opacity: 0;
-}
-}
-
-@-webkit-keyframes 
-titleAnimation { 0% {
- opacity: 0;
-}
- 12.5% {
- opacity: 1;
-}
- 25% {
- opacity: 1;
-}
- 37.5% {
- opacity: 0;
-}
- 100% {
- opacity: 0;
-}
-}
-
-@-moz-keyframes 
-titleAnimation { 0% {
- opacity: 0;
-}
- 12.5% {
- opacity: 1;
-}
- 25% {
- opacity: 1;
-}
- 37.5% {
- opacity: 0;
-}
- 100% {
- opacity: 0;
-}
-}
-
-@keyframes 
-titleAnimation { 0% {
- opacity: 0;
-}
- 12.5% {
- opacity: 1;
-}
- 25% {
- opacity: 1;
-}
- 37.5% {
- opacity: 0;
-}
- 100% {
- opacity: 0;
-}
-}
-
-
-/* ======================================================= */
-
 .skills {
   background-color: rgba(37, 38, 37, 0.85);
-  /* min-height: 1800px; USE WHEN TECH LOGOS SHOWING*/ 
   max-height: 100vh;
   padding: 1vw 10vw;
   display: flex;
@@ -466,19 +269,9 @@ titleAnimation { 0% {
   justify-content: center;
 }
 
-.skills-container {
-  /* background-color: navy; */
-  padding: 5vw 0;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  /* flex-wrap: wrap; */
-}
-
-.tech-list-row{
+.skills-container{
   /* background-color: lightsalmon; */
   width: 100%;
-  /* max-width: 100%; */
   min-width: 100%;
   display: flex;
   flex-direction: column;
@@ -495,28 +288,10 @@ i {
     height: 1000px;
   }
 
-  .tech-list-row {
-  /* background-color: pink; */
-  /* display: flex; */
-  width: 650px;
-  /* flex-wrap: wrap; */
-}
-  .tech-row {
-    width: 650px;
-    /* max-width: 650px; */
-    min-width: 650px;
-  }
-
   .column3{
     display: none;
   }
 }
-
-/* @media only screen and (min-width: 800px) {
-  .skills {
-    background-color: aquamarine;
-  }
-} */
 
 @media only screen and (max-width: 750px) {
   .skills{
@@ -532,38 +307,6 @@ i {
   .column3{
     display: none;
   }
-
-  .tech-row {
-    width: 270px;
-    /* max-width: 650px; */
-    min-width: 270px;
-  }
-
-  .tech-list-row {
-
-    width: 100%;
-    min-width: 250px;
-  }
-
-  /* .hide-for-mobile{
-    display: none;
-  } */
-}
-
-  .tech-row {
-  /* background-color: royalblue; */
-  display: flex;
-  width: 270px;
-  flex-wrap: wrap;
-}
-
-.icon {
-  background-color: rgba(37, 38, 37, 0.20);
-  padding: 10px;
-  margin: 5px;
-  text-align: center;
-  width: 95px;
-  height: 90px;
 }
 
 /* ======================================================= */
@@ -575,7 +318,6 @@ i {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* align-items: center; */
 }
 
 .project_container {
@@ -585,7 +327,6 @@ i {
   flex-wrap: wrap;
   min-height: 2000px;
   align-items: center;
-  /* justify-content: space-between; */
 }
 
 .project { 
@@ -597,10 +338,8 @@ i {
   flex-direction: column;
 }
 
-/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+/* The flip card container - set the width and height to whatever you want.*/
 .flip-card {
-  /* background-color: transparent; */
-  /* background-color: fuchsia; */
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
   width: 100%;
   max-width: 600px;
@@ -702,7 +441,6 @@ i {
     margin: 20px 0;
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
   }
 
   #profile-pic {
@@ -768,7 +506,6 @@ i {
   padding: 5vw 0;
   display: flex;
   justify-content: space-between;
-  /* align-items: center; */
   flex-direction: column;
 }
 
@@ -778,10 +515,6 @@ i {
 
 /* iphone width 375px */
 @media only screen and (max-width: 750px) {
-  .course {
-    /* background-color: pink; */
-    /* height: 1100px; */
-  }
   .column-container {
     flex-direction: column;
     align-items: center;
