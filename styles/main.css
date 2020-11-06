@@ -51,7 +51,7 @@ ul {
   display: flex;
   width: 30vw;
   height: 5vh;
-  justify-content: space-between;
+  justify-content: space-evenly;
   /* background-color: magenta; */
 }
 
@@ -64,6 +64,7 @@ a:link {
   color: rgb(231, 229, 229);
   /* font-family: FGrotesk,Helvetica Neue,arial,sans-serif; */
   line-height: 1.6;
+  /* background-color: magenta; */
 }
 
 a:visited {
@@ -428,7 +429,8 @@ titleAnimation { 0% {
 
 .skills {
   background-color: rgba(37, 38, 37, 0.85);
-  min-height: 1800px;
+  /* min-height: 1800px; USE WHEN TECH LOGOS SHOWING*/ 
+  max-height: 100vh;
   padding: 1vw 10vw;
   display: flex;
   flex-direction: column;
@@ -490,7 +492,7 @@ i {
 @media only screen and (max-width: 750px) {
   .skills{
     /* background-color: cadetblue; */
-    height: 1400px;
+    min-height: 2500px;
   }
 
   .skills-container{
@@ -514,9 +516,9 @@ i {
     min-width: 270px;
   }
 
-  .hide-for-mobile{
+  /* .hide-for-mobile{
     display: none;
-  }
+  } */
 }
 
   .tech-row {
@@ -635,6 +637,11 @@ i {
   img{
     height: 100%;
     width: 100%;
+  }
+
+  #profile-pic {
+    height: 99.5vh;
+    width: auto;
   }
 
   .project-mobile{
