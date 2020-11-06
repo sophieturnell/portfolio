@@ -160,6 +160,11 @@ p {
   justify-content: center;
 }
 
+#profile-pic {
+  height: 99.5vh;
+  width: auto;
+}
+
 @media only screen and (max-width: 800px) {
   .intro {
     /* background-color: aquamarine; */
@@ -174,6 +179,22 @@ p {
   div.column{
     width: 427px;
     margin: 0;
+  }
+  #profile-pic {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .index {
+  /* display: flex; */
+  /* width: 30vw; */
+  width: 70vw;
+  /* height: 5vh; */
+  /* justify-content: space-evenly; */
+  margin: 18px 0;
+  /* background-color: magenta; */
   }
 }
 
@@ -463,7 +484,7 @@ i {
 @media only screen and (max-width: 2000px) {
   .skills{
     /* background-color: dodgerblue; */
-    height: 2000px;
+    height: 1000px;
   }
 
   .tech-list-row {
@@ -492,7 +513,7 @@ i {
 @media only screen and (max-width: 750px) {
   .skills{
     /* background-color: cadetblue; */
-    min-height: 2500px;
+    min-height: 1200px;
   }
 
   .skills-container{
@@ -511,9 +532,9 @@ i {
   }
 
   .tech-list-row {
-    width: 270px;
-    /* max-width: 650px; */
-    min-width: 270px;
+
+    width: 100%;
+    min-width: 250px;
   }
 
   /* .hide-for-mobile{
@@ -638,12 +659,6 @@ i {
     height: 100%;
     width: 100%;
   }
-
-  #profile-pic {
-    height: 99.5vh;
-    width: auto;
-  }
-
   .project-mobile{
     display:none;
   }
@@ -676,12 +691,21 @@ i {
     /* align-items: center; */
   }
 
+  #profile-pic {
+    height: 100%;
+    width: 100%;
+  }
 }
 
 @media only screen and (max-width: 390px) {
   .projects {
     /* background-color: yellow; */
     min-height: 3100px;
+  }
+
+  #profile-pic {
+    height: 100%;
+    width: 100%;
   }
 
 }
@@ -736,8 +760,6 @@ i {
 
 .column-container {
   display: flex;
-  
-
 }
 
 /* iphone width 375px */
