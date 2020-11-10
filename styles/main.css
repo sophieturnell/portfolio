@@ -38,18 +38,15 @@ li {
 ul {
   display: flex;
   justify-content: space-between;
-  /* background-color: maroon; */
   padding: 25px 0;
 }
 }
 
 .navbar-items {
-  /* background-color: darkviolet; */
   display: flex;
 }
 
 .navbar-items i{
-  /* background-color: lightblue; */
   padding: 0 27px;
 }
 
@@ -58,7 +55,6 @@ ul {
   width: 30vw;
   height: 5vh;
   justify-content: space-evenly;
-  /* background-color: magenta; */
 }
 
 a:link {
@@ -68,7 +64,6 @@ a:link {
   font-size: 12px;
   text-decoration-line: none;
   color: rgb(231, 229, 229);
-  /* font-family: FGrotesk,Helvetica Neue,arial,sans-serif; */
   line-height: 1.6;
   /* background-color: magenta; */
 }
@@ -80,7 +75,6 @@ a:visited {
 /* mouse over link */
 a:hover {
   color: magenta;
-  /* text-decoration-line: underline; */
 }
 
 /* selected link */
@@ -118,7 +112,6 @@ h2 {
   font-weight: 200;
   letter-spacing: 3px;
   font-size: 27px;
-  /* background-color: maroon; */
 }
 
 /* project titles, briefs and nav bar */
@@ -142,7 +135,6 @@ h5 {
   font-size: 12px;
   font-weight: 300;
   letter-spacing: 1px;
-  /* text-transform: none; */
   margin: 0;
 }
 
@@ -151,7 +143,7 @@ p {
   letter-spacing: 0.5px;
   text-transform: none;
   margin: 0;
-  font-weight: 350;
+  font-weight: 325;
 }
 
 ol {
@@ -189,7 +181,6 @@ ol li {
 
 @media only screen and (max-width: 800px) {
   .intro {
-    /* background-color: aquamarine; */
     height: 150vh;
   }
   .intro-container {
@@ -212,14 +203,12 @@ ol li {
   .index {
   width: 70vw;
   margin: 18px 0;
-  /* background-color: magenta; */
   }
 }
 
 /* iphone width 375px */
 @media only screen and (max-width: 550px) {
   .intro {
-    /* background-color: pink; */
     height: 1100px;
   }
   .intro-container {
@@ -239,27 +228,23 @@ ol li {
 }
 
 .intro-container {
-  /* background-color: navy; */
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .column {
-  /* background-color: dodgerblue; */
   margin: 0 2vw 0 0;
   width: 30vw;
 }
 
 .column1 {
-  /* background-color: magenta; */
   margin: 0 2vw 2vw 0;
   display: flex;
   flex-direction: column;
 }
 
 .column2 {
-  /* background-color: red; */
   margin: 0 2vw 2vw 0;
   width: 37vw;
 }
@@ -286,7 +271,6 @@ ol li {
 }
 
 .skills-container{
-  /* background-color: lightsalmon; */
   width: 100%;
   min-width: 100%;
   display: flex;
@@ -300,7 +284,6 @@ i {
 }
 @media only screen and (max-width: 2000px) {
   .skills{
-    /* background-color: dodgerblue; */
     height: 1000px;
   }
 
@@ -311,7 +294,6 @@ i {
 
 @media only screen and (max-width: 750px) {
   .skills{
-    /* background-color: cadetblue; */
     min-height: 1200px;
   }
 
@@ -337,7 +319,6 @@ i {
 }
 
 .project_container {
-  /* background-color: navy; */
   padding: 5vw 0;
   display: flex;
   flex-wrap: wrap;
@@ -346,7 +327,6 @@ i {
 }
 
 .project { 
-  /* background-color: rgb(45, 45, 45); */
   width: 70vw;
   max-width: 600px;
   margin: 0 2vw 2vw 0;
@@ -396,12 +376,10 @@ i {
 
 @media only screen and (max-width: 2000px) {
   .projects {
-    /* background-color: plum; */
     height: 2000px;
   }
 
   div.project_container {
-    /* background-color: teal; */
     padding: 0;
     min-height: 1500px;
     display: flex;
@@ -411,7 +389,6 @@ i {
   }
 
   div.project { 
-    /* background-color: yellow; */
     width: 605px;
     max-width: 605px;
     height: 550px;
@@ -430,13 +407,11 @@ i {
 
 @media only screen and (max-width: 750px) {
   .projects {
-    /* background-color: lightblue; */
     min-height: 2700px;
     display: flex;
   }
 
   .flip-card-front {
-    /* background-color: lightcoral; */
     min-height: 175px;
     height: 175px;
   }
@@ -446,12 +421,10 @@ i {
   }
 
   div.project_container {
-    /* background-color: lightcoral; */
     flex-wrap: nowrap;
   }
 
   div.project-mobile{
-    /* background-color: lightgoldenrodyellow; */
     width: 100%;
     max-width: 100%;
     margin: 20px 0;
@@ -467,7 +440,6 @@ i {
 
 @media only screen and (max-width: 390px) {
   .projects {
-    /* background-color: yellow; */
     min-height: 3100px;
   }
 
@@ -486,7 +458,6 @@ i {
 }
 
 .row {
-  /* background-color: yellow; */
   padding: 0 0 1vw 0;
   display: flex;
   justify-content: space-between;
@@ -498,7 +469,6 @@ i {
 }
 
 .logo {
-  /* background-color: dodgerblue; */
   width: 600px;
   text-align: right;
 }
@@ -518,7 +488,6 @@ i {
 }
 
 .course-container {
-  /* background-color: navy; */
   padding: 5vw 0;
   display: flex;
   justify-content: space-between;
@@ -536,7 +505,6 @@ i {
     align-items: center;
   }
   .column2{
-    /* background-color: black; */
     width: 270px;
   }
 }
@@ -551,6 +519,5 @@ footer {
 }
 
 .contact i{
-  /* background-color: lightblue; */
   padding: 0 27px;
 }
