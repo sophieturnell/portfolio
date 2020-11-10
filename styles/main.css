@@ -209,7 +209,7 @@ ol li {
 /* iphone width 375px */
 @media only screen and (max-width: 550px) {
   .intro {
-    height: 1100px;
+    height: 1300px;
   }
   .intro-container {
     flex-direction: column;
