@@ -216,7 +216,9 @@ ol li {
 /* iphone width 375px */
 @media only screen and (max-width: 550px) {
   .intro {
-    min-height: 1300px;
+    /* TOP OPTION WHEN PROFILE IMAGE ADDED */
+    /* min-height: 1300px; */
+    min-height: 950px;
   }
   .intro-container {
     flex-direction: column;
