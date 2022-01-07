@@ -393,12 +393,12 @@ i {
 /* Style the front side (fallback if image is missing) */
 .flip-card-front {
   background-color: rgb(37, 38, 37);
-  min-height: 520px;
+  min-height: 400px;
 }
 
 @media only screen and (max-width: 2000px) {
   .projects {
-    height: 2000px;
+    height: 2500px;
   }
 
   div.project_container {
@@ -429,7 +429,7 @@ i {
 
 @media only screen and (max-width: 750px) {
   .projects {
-    min-height: 2800px;
+    min-height: 3300px;
     display: flex;
   }
 
@@ -475,7 +475,7 @@ i {
 .flip-card-back {
   transform: rotateY(180deg);
   background-color: rgb(45, 45, 45);
-  min-height: 520px;
+  height: 400px;
   padding: 20px;
 }
 
